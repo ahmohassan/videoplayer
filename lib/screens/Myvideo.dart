@@ -15,8 +15,8 @@ class _MyvideoState extends State<Myvideo> {
   @override
   void initState() {
     super.initState();
-    _controller = VideoPlayerController.asset(widget.asset)..value.isPlaying
-      ..setLooping(true)
+    _controller = VideoPlayerController.asset(widget.asset)
+      ..setLooping(true)..play()
       ..initialize().then((_) {
         // Ensure the first frame is shown after the video is initialized, even before the play button has been pressed.
         setState(() {});
