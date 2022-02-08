@@ -14,11 +14,13 @@ class MyHomePage extends StatelessWidget {
     mymethod();
     return Scaffold(
       body: PageView(
-        scrollDirection:Axis.vertical, children: const [
-        Myvideo(asset: 'assets/videos/v1.mp4'),
-        Myvideo(asset: 'assets/videos/v2.mp4'),
-         Myvideo(asset: 'assets/videos/v3.mp4')
-      ]),
+        scrollDirection: Axis.vertical,
+        children: const [
+          Myvideo(asset: 'assets/videos/v1.mp4'),
+          Myvideo(asset: 'assets/videos/v2.mp4'),
+          Myvideo(asset: 'assets/videos/v3.mp4')
+        ],
+      ),
     );
   }
 
